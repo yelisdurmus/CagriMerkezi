@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E597382-19D5-4092-9638-7C2CA1C9E350}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CagriMerkezi_ProsedurluLinq_</RootNamespace>
+    <AssemblyName>CagriMerkezi%28ProsedurluLinq%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Birim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birim.Designer.cs">
+      <DependentUpon>Birim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CagriMerkeziUygulama.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CagriMerkeziUygulama.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kampanyalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kampanyalar.Designer.cs">
+      <DependentUpon>Kampanyalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıtlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıtlar.Designer.cs">
+      <DependentUpon>Kayıtlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personeller.Designer.cs">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sube.Designer.cs">
+      <DependentUpon>Sube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarife.Designer.cs">
+      <DependentUpon>Tarife.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Birim.resx">
+      <DependentUpon>Birim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kampanyalar.resx">
+      <DependentUpon>Kampanyalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıtlar.resx">
+      <DependentUpon>Kayıtlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personeller.resx">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sube.resx">
+      <DependentUpon>Sube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarife.resx">
+      <DependentUpon>Tarife.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CagriMerkeziUygulama.dbml.layout">
+      <DependentUpon>CagriMerkeziUygulama.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CagriMerkeziUygulama.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CagriMerkeziUygulama.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_131836491_4htC19m8q9YX2g9CdsUxoUemr5i9kv9e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mac-crm-small-business-platform-for-apple-business-market-gro-crm-features-call-center-large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21752087-lady-call-center-with-computer-network-cartoon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\judge-cartoon-cash-register-with-a-money-drawer-vector-21910623.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6325585-young-cute-call-center-representative-on-a-blue-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f068db8edee9c1ec1c5cc9d5f9a355c0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86079354-call-center-manager-s-accessories-headphones-on-gery-background-top-view-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1512950050685-b1d4ae63d2df.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-man-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-869750144-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_login_man-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_-_Magnifier-Search-Zoom-_3844402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64x64search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-workplace-with-keypad-glasses_23-2147833237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6325585-young-cute-call-center-representative-on-a-blue-background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ppt-background-finance-6652.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-1021879184-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-circle-green-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010_trash-2-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-software-update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-238-661267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiny-arrow-left-double-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archives_main_thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-843123782-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21462250.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

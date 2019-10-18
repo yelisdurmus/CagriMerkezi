@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.75, 8.5" name="CagriMerkeziUygulama">
+  <DataContextMoniker Name="/CagriMerkeziUygulamaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e4d24bf4-1101-48f4-8bea-afecf8ddfc6d" absoluteBounds="6.5, 1.25, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/CGörevli" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8597f902-b329-43b9-af46-82e74b96b6d5" absoluteBounds="6.515, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdb56446-08b4-4b9f-8894-782e9a4ffb94" absoluteBounds="4.125, 5.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Kampanya" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ebd9bb7-8161-4e6a-a93b-03b4628bd9bc" absoluteBounds="4.14, 5.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd223908-f964-44df-a18c-016ecca59fa2" absoluteBounds="0.75, 2.625, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Musteriler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22eb44ef-67be-4731-b9aa-a585bf1a8262" absoluteBounds="0.765, 3.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="182a0b75-5a31-488d-bbbe-5d188dd58ddd" absoluteBounds="3.5, 1.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Odemeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1274506-337b-43c3-a318-21db1bb57560" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0a46d8e-9f30-474f-8d41-6262c216a1ac" absoluteBounds="1, 5.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Tarifeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf69129c-0a6e-4f08-9462-6be41d1bacef" absoluteBounds="1.0150000000000001, 6.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.95274983723958); (3.5 : 2.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Musteriler/Musteriler_Odemeler" />
+      <nodes>
+        <classShapeMoniker Id="dd223908-f964-44df-a18c-016ecca59fa2" />
+        <classShapeMoniker Id="182a0b75-5a31-488d-bbbe-5d188dd58ddd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 6.51044840494792); (4.125 : 6.51044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Tarifeler/Tarifeler_Kampanya" />
+      <nodes>
+        <classShapeMoniker Id="d0a46d8e-9f30-474f-8d41-6262c216a1ac" />
+        <classShapeMoniker Id="cdb56446-08b4-4b9f-8894-782e9a4ffb94" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.875 : 4.5881982421875); (1.875 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Musteriler/Musteriler_Tarifeler" />
+      <nodes>
+        <classShapeMoniker Id="dd223908-f964-44df-a18c-016ecca59fa2" />
+        <classShapeMoniker Id="d0a46d8e-9f30-474f-8d41-6262c216a1ac" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="79aa2e91-7781-4a87-a2ff-9d2623025662" absoluteBounds="7.25, 6, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Birimler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fa5e27c-2c09-4e72-9b58-93f2e2146899" absoluteBounds="7.265, 6.4600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a07d6d5-53a5-489f-aaaf-379b3a5d6454" absoluteBounds="9.25, 1.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Kayıt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00185808-1dcd-4f5c-9419-1823c3103050" absoluteBounds="9.265, 2.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.875 : 6); (8.875 : 3.3538207421875); (9.25 : 3.3538207421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Birimler/Birimler_Kayıt" />
+      <nodes>
+        <classShapeMoniker Id="79aa2e91-7781-4a87-a2ff-9d2623025662" />
+        <classShapeMoniker Id="5a07d6d5-53a5-489f-aaaf-379b3a5d6454" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 2.44794840494792); (9.25 : 2.44794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/CGörevli/CGörevli_Kayıt" />
+      <nodes>
+        <classShapeMoniker Id="e4d24bf4-1101-48f4-8bea-afecf8ddfc6d" />
+        <classShapeMoniker Id="5a07d6d5-53a5-489f-aaaf-379b3a5d6454" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.68674967447917); (8.79166666666667 : 3.68674967447917 : JumpStart); (8.95833333333333 : 3.68674967447917 : JumpEnd); (9.25 : 3.68674967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Musteriler/Musteriler_Kayıt" />
+      <nodes>
+        <classShapeMoniker Id="dd223908-f964-44df-a18c-016ecca59fa2" />
+        <classShapeMoniker Id="5a07d6d5-53a5-489f-aaaf-379b3a5d6454" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d282a712-1841-4969-965a-06fe7896f407" absoluteBounds="10.5, 6.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CagriMerkeziUygulamaDataContext/Subeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c6f7aaf-aaaa-470e-9e39-3f5d069bee6f" absoluteBounds="10.515, 6.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.5 : 6.85179768880208); (9.25 : 6.85179768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CagriMerkeziUygulamaDataContext/Subeler/Subeler_Birimler" />
+      <nodes>
+        <classShapeMoniker Id="d282a712-1841-4969-965a-06fe7896f407" />
+        <classShapeMoniker Id="79aa2e91-7781-4a87-a2ff-9d2623025662" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
